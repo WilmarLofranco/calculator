@@ -2,29 +2,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div class = "calc">
         <div id="display"></div>
-        <div id = "seven">seven</div>
-        <div id = "eight">eight</div>
-        <div id = "nine">nine</div>
-        <div id = "divide">divide</div>
-        <div id = "four">four</div>
-        <div id = "five">five</div>
-        <div id = "six">six</div>
-        <div id = "multiply">multiply</div>
-        <div id = "one">one</div>
-        <div id = "two">two</div>
-        <div id = "three">three</div>
-        <div id = "minus">minus</div>
-        <div id = "zero">zero</div>
-        <div id = "clear">clear</div>
-        <div id = "equals">equals</div>
-        <div id = "plus">plus</div>
+        <div class="content">
+        <div class="numbers">
+            <button id="seven" value=7>7</button>
+            <button id="eight" value=8>8</button>
+            <button id="nine" value=9>9</button>
+            <button id="four" value=4>4</button>
+            <button id="five" value=5>5</button>
+            <button id="six" value=6>6</button>
+            <button id="one" value=1>1</button>
+            <button id="two" value=2>2</button>
+            <button id="three" value=3>3</button>
+            <button id="zero" value=0>0</button>
+            <button id="clear">C</button>
+            <button id="equals">=</button>
+        </div>
+        <div class="operators">
+            <button id="operatorDivide" value="/">÷</button>
+            <button id="operatorMultiply" value="*">X</button>
+            <button id="operatorMinus" value="-">-</button>
+            <button id="operatorPlus" value="+">+</button>  
+        </div>
+        </div>
     </div>
 </body>
 </html>

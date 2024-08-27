@@ -9,24 +9,55 @@ body {
     border-width: 2px;
     height: 500px;
     width: 500px;
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-direction: column;
     padding: 10px;
+    gap: 10px;    
 }
 
 #display {
+    display: flex;
     border-style: solid;
     border-width: 1px;
-    display: flex;
-    flex: 1 0 450px
+    height: 90px;
 }
 
-.calc button {
+.content {
     display: flex;
-    flex: 1 0 110px;
+    flex: 1;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex: 4 ;
+    padding: 5px;
+}
+
+.numbers button {
+    display: flex;
+    flex: 1 0 100px;
+    font-size: 30px;
     justify-content: center;
     align-items: center;
+}
+
+.operators {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    padding: 5px;
+}
+
+.operators button {
+    display: flex;
+    flex: 1 0 auto;
+    width: 120px;
     font-size: 30px;
-    font-weight: bold;
+    justify-content: center;
+    align-items: center;
 }
