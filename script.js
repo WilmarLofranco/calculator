@@ -60,6 +60,9 @@ function operate () {
         default:
             result = "Error";
 }
+    if (!isNaN(result)) {
+    result = parseFloat(result.toFixed(3));
+    }
     displayValue = result;
     display.textContent = displayValue;
     a = result.toString();
